@@ -31,3 +31,9 @@
 8. 百度浏览器、世界之窗内核：IE内核；
 9. 2345浏览器内核：好像以前是IE内核，现在也是IE+Chrome双内核了；
 10. UC浏览器内核：这个众口不一，UC说是他们自己研发的U3内核，但好像还是基于Webkit和Trident，还有说是基于火狐内核。。
+
+## link和import
++ 区别1：link是XHTML标签，除了加载CSS外，还可以定义RSS等其他事务；@import属于CSS范畴，只能加载CSS。
++ 区别2：link引用CSS时，在页面载入时同时加载；@import需要页面网页完全载入以后加载。
++ 区别3：link是XHTML标签，无兼容问题；@import是在CSS2.1提出的，低版本的浏览器不支持。
++ 区别4：link支持使用Javascript控制DOM去改变样式；而@import不支持。
