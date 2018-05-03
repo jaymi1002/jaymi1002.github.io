@@ -37,3 +37,7 @@
 + 区别2：link引用CSS时，在页面载入时同时加载；@import需要页面网页完全载入以后加载。
 + 区别3：link是XHTML标签，无兼容问题；@import是在CSS2.1提出的，低版本的浏览器不支持。
 + 区别4：link支持使用Javascript控制DOM去改变样式；而@import不支持。
+
+## WebSocket解释及如何兼容低版本浏览器
+1. 使用轮询或者长连接实现伪websocket的。
+2. 使用flash实现一个websock客服端。
