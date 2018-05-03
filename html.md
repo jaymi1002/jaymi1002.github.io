@@ -1,4 +1,4 @@
-# HTML 知识点
+# HTML 浏览器相关 知识点
 ## !DOCTYPE html
 + document type HyperText Mark-up Language。指定当前文本类型，以严格模式去解析展示HTML。好处：避免浏览器的怪异模式。怪异模式：浏览器向后兼容。
 ## SGML
