@@ -94,3 +94,14 @@ h1突出文章主题，面对用户，更突出其视觉效果，突出网站标
 H5可以存储的东东：数组、json数据、图片、脚本、样式文件 
 #### 原理： 
 HTML5的离线存储是基于一个新建的.appcache文件的，通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储了下来。之后当网络在处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示。
+
+### 页面可见性（Page Visibility API） 可以有哪些用途？
+> 页面可见性： 就是对于用户来说，页面是显示还是隐藏, 所谓显示的页面，就是我们正在看的页面；隐藏的页面，就是我们没有看的页面。 因为，我们一次可以打开好多标签页面来回切换着，始终只有一个页面在我们眼前，其他页面就是隐藏的，还有一种就是.........，(把浏览器最小化，所有的页面就都不可见了)。
+> API 很简单，document.hidden 就返回一个布尔值，如果是true, 表示页面可见，false 则表示，页面隐藏。  不同页面之间来回切换，触发visibilitychange事件。 还有一个document.visibilityState, 表示页面所处的状态，取值：visible, hidden 等四个。
+> document.addEventListener("visibilitychange", function(){
+    if(document.hidden){
+        document.title ="hidden";
+    }else {
+        document.title = "visibile";
+    }
+})
