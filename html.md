@@ -97,6 +97,7 @@ HTML5的离线存储是基于一个新建的.appcache文件的，通过这个文
 
 ### 页面可见性（Page Visibility API） 可以有哪些用途？
 > 页面可见性： 就是对于用户来说，页面是显示还是隐藏, 所谓显示的页面，就是我们正在看的页面；隐藏的页面，就是我们没有看的页面。 因为，我们一次可以打开好多标签页面来回切换着，始终只有一个页面在我们眼前，其他页面就是隐藏的，还有一种就是.........，(把浏览器最小化，所有的页面就都不可见了)。
+<br/>
 >API 很简单，document.hidden 就返回一个布尔值，如果是true, 表示页面可见，false 则表示，页面隐藏。  不同页面之间来回切换，触发visibilitychange事件。 还有一个document.visibilityState, 表示页面所处的状态，取值：visible, hidden 等四个。
 <br/>
 <pre> document.addEventListener("visibilitychange", function(){
@@ -108,4 +109,5 @@ HTML5的离线存储是基于一个新建的.appcache文件的，通过这个文
 })</pre>
 
 >我们打开这个页面，然后再打开另一个页面，来回点击这两个页面，当我们看到这个页面时，标题显示visiable ,当我们看另一个页面时，标题显示hidden;
+<br/>
 >动画，视频，音频都可以在页面显示时打开，在页面隐藏时关闭。
